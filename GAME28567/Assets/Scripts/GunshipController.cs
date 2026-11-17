@@ -46,7 +46,6 @@ public class GunshipController : MonoBehaviour
         
         Rigidbody2D rb2D = cannonball.GetComponent<Rigidbody2D>();
         rb2D.AddForce(direction * cannonballForce, forceMode);
-        var impulse = (100 * Mathf.Deg2Rad) * rb2D.inertia;
         rb2D.AddTorque(torque, forceMode);
 
 
